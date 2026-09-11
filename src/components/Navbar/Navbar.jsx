@@ -1,3 +1,4 @@
+import '/Navbar.css'; //import the CSS file for styling the Navbar component
 //Navbar component for the SNP legal Support website
 function Navbar(){
     return(
