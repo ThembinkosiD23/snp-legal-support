@@ -1,8 +1,22 @@
+/*Brand colors for SNP Legal Support*/
+:root{
+    --primary-color: #1f3a5f; /* Dark Blue */
+    --secondary-color: #c9a227; /* Amber */
+    --text-color: #222222;
+    --background-color: #ffffff;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    background-color: var(--background-color);
+}
+
+/*Company name styles*/
+nav h1{
+    color: var(--primary-color);
 }
 
 /* Navbar list styles */
@@ -17,4 +31,9 @@ nav ul {
 /* Navbar link styles */
 nav a{
     text-decoration: none;
+}
+
+/*Highlight navigation links when the user hovers over them*/
+nav a:hover {
+    color: var(--secondary-color);
 }
