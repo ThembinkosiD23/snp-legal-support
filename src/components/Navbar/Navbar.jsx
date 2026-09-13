@@ -11,9 +11,12 @@ function Navbar(){
             {/*Button used to open and close the mobile navigation */}
             <button
                 type = "button"
+                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+                aria-expanded={isMenuOpen}
                 onClick ={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                🟰
+                {/*Change the button text based on whether the menu is open or closed */}
+                {isMenuOpen ? '❌' : '☰'}
             </button>
             {/*Main navigation links */}
             <ul className={isMenuOpen ? "nav-menu open" : "nav-menu"}>

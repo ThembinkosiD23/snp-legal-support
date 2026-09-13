@@ -47,7 +47,12 @@ nav button{
 @media (max-width: 768px) {
     /*Show the menu button on smaller screens*/
     nav button{
-    display: none;
+    display: block;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
     }
 
     nav {
