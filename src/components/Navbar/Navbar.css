@@ -1,0 +1,79 @@
+/*Brand colors for SNP Legal Support*/
+:root{
+    --primary-color: #1f3a5f; /* Dark Blue */
+    --secondary-color: #c9a227; /* Amber */
+    --text-color: #222222;
+    --background-color: #ffffff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-color);
+}
+
+/*Company name styles*/
+nav h1{
+    color: var(--primary-color);
+}
+
+/* Navbar list styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    margin: 0;
+}
+
+/* Navbar link styles */
+nav a{
+    text-decoration: none;
+}
+
+/*Highlight navigation links when the user hovers over them*/
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/*Hide the menu button on larger screens*/
+nav button{
+    display: none;
+}
+
+/*-----------------Mobile responsiveness-----------------*/
+@media (max-width: 768px) {
+    /*Show the menu button on smaller screens*/
+    nav button{
+    display: block;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-hearder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    /* Hide the navigation links by default on mobile */
+    nav ul {
+        display: none; 
+    }
+
+    /* Show the navigation links when the menu is open */
+    nav ul.open{
+        display: flex; 
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
