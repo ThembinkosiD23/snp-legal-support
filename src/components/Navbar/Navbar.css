@@ -59,7 +59,12 @@ nav button{
         flex-direction: column;
         gap: 1rem;
     }
-
+    .nav-hearder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
     /* Hide the navigation links by default on mobile */
     nav ul {
         display: none; 

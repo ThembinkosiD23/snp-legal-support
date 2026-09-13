@@ -7,6 +7,7 @@ function Navbar(){
 
     return(
         <nav>
+            <div className= "nav-header">
             <h1>SNP Legal Support</h1>
             {/*Button used to open and close the mobile navigation */}
             <button
@@ -18,6 +19,7 @@ function Navbar(){
                 {/*Change the button text based on whether the menu is open or closed */}
                 {isMenuOpen ? '❌' : '☰'}
             </button>
+            </div>
             {/*Main navigation links */}
             <ul className={isMenuOpen ? "nav-menu open" : "nav-menu"}>
                 <li><a href="#home">Home</a></li>
